@@ -1,0 +1,402 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Dejan Dabic - Web Designer"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  #
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Dejan Dabic"
+  description: Web Designer & Developer
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/ddfav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#3a5189"
+    secondaryTextColor: "#1E3A8A"
+    backgroundColor: "#ffffff"
+  #   secondaryBackgroundColor: "#64ffda1a"
+    primaryColor: "#1E3A8A"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandLogo: "/dd-logo2.svg" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    # brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: true
+      disableEducation: true
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    # intro: "Hi, my name is"
+    title: "Hi, I'm Dejan, "
+    subtitle: "Web Designer & Developer"
+    content: "If you need a modern and powerful website, send me an email."
+    image: /images/me4.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "My Projects"
+      url: "#projects"
+      download: false
+      newPage: false
+    # socialLinks:
+    #   fontAwesomeIcons:
+    #     - icon: fab fa-github
+    #       url: https://example.com
+    #     - icon: fab fa-x-twitter
+    #       url: https://example.com
+    #   customIcons:
+    #     - icon: /fav.png
+    #       url: "https://example.com"
+
+  # About
+  about:
+    enable: false
+    title: "What I do"
+    image: "/images/showcase small.png"
+    content: |-
+      ### Design
+      I design beautiful and powerful websites for modern businesses. Any business today needs a website that wins customers’ trust and helps you do your business well. I make sure your website is up to that standard.
+
+      ### Development
+      I build websites using various technologies, but my preffered one is **Webflow** where I can create <u>responsive</u>, <u>powerful</u> and <u>fully custom</u> websites. Plus, Webflow has an incredibly simple Content Editor for you and your team to edit website content quickly and easily.
+      ><u>Ecommerce stores</u> to sell your products and manage your business built with **Shopify**.
+    skills:
+      enable: true
+      title: "Here are technologies I have experience with:"
+      items:
+        - "HTML"
+        - "CSS"
+        - "JavaScript"
+        - "Webflow"
+        - "Hugo"
+        - "Wordpress"
+        - "Shopify"
+     
+
+  # Experience
+  experience:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - job: "Senior Software Developer"
+        company: "Facebook"
+        companyUrl: "https://example.com"
+        date: "Jan 2022 - present"
+        featuredLink:
+          enable: true
+          name: "View the project"
+          url: "https://example.com"
+        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+      - job: "Software Developer"
+        company: "Amazon"
+        companyUrl: "https://example.com"
+        date: "Sep 2020 - Dec 2021"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+          - Lead backend developer for a product.
+          - Created a frontend design for a product.
+
+      - job: "Junior Software Developer"
+        company: "Apple"
+        companyUrl: "https://example.com"
+        date: "Jan 2020 - Aug 2020"
+        info:
+          enable: false
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        content: |
+          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+          - Lead backend developer for a product.
+          - Created a frontend design for a product.
+
+      - job: "UI/UX Designer"
+        company: "Netflix"
+        companyUrl: "https://example.com"
+        date: "June 2017 - Nov 2019"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+        content: |
+          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+          - Lead backend developer for a product.
+          - Created a frontend design for a product.
+
+      - job: "Product Designer"
+        company: "Google"
+        companyUrl: "https://example.com"
+        date: "Feb 2016 - Mar 2017"
+        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+  # Education
+  education:
+    enable: false
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master of Business Administration"
+        school:
+          name: "University of California, Berkeley"
+          url: "https://example.org"
+        date: "2013 - 2015"
+        GPA: "3.8 out of 5.0"
+        content: |-
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+      - title: "Bachelor of Science in Computer Science"
+        school:
+          name: "Massachusetts Institute of Technology"
+          url: "https://example.org"
+        date: "2009 - 2013"
+        GPA: "3.9 out of 5.0"
+        content: |-
+          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+          - Face mask detection using a single convolutional neural network.
+
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        featuredLink:
+          enable: true
+          name: "My academic record"
+          url: "https://example.com"
+      - title: "High School"
+        school:
+          name: "Thomas Jefferson High School for Science and Technology."
+          url: "https://example.org"
+        GPA: "4.2 out of 5.0"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Catalogue"
+    # subtitle: "If you want your websites built fast, I suggest you to choose one of themes that match your business and I will rebuild it to match your brand colors, photos, and identity."
+    items:
+      - title: Boost - Online Pet Shop
+        content: Implement this design to your Ecommerce pet shop. It is a premium theme from Shopify and I can help you build your business on top of it.
+        url: https://themes.shopify.com/themes/boost/styles/bloom/preview
+        image: /images/projects/pet-shop.jpg
+      - title: Cafeteria TNC
+        content: If you are a coffee shop owner, this is a great design to implement. Showcase your innovative dishes with high-quality photos, highlighting the unique blend of flavors, which builds credibility in your cafe or restaurant. 
+        url: https://cafeteria-tnc.webflow.io/
+        image: /images/projects/coffee-shop.png
+      - title: Charity Flow
+        content: If you work at charity organization I can help you build a nice website that will help your non-profit stand out.
+        url: https://charity-flow-wbs.webflow.io/
+        image: /images/projects/charity.png
+      # - title: Yoga You
+      #   content: if you're looking for a modern and trustworthy online presence for your yoga and wellness business, this website is a great choice.
+      #   url: https://yoga-you.webflow.io/homepage
+      #   image: /images/projects/yoga.jpg
+
+  # projects
+  projects:
+    enable: true
+    title: "My Projects"
+    items:
+      - title: Team App
+        content: Full website design and build for a concept team collaboration platform. This website also includes a beautiful blog. I have built the website and the blog in Webflow which has one of the best CMS for blog hosting.
+        image: /images/projects/teamapp.jpg
+        featured:
+          name: Check it out
+          link: https://team-app-f9b7a5.webflow.io/
+        badges:
+          - "Webflow"
+          - "Webflow CMS"
+        # links:
+        #   - icon: fa fa-envelope
+        #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/hugo-profile
+        #   - icon: fab fa-twitter
+        #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Chat App
+        content: This is a homepage design and build for a concept project – a chat application. I designed the page first then built a responsive web page using Webflow.
+        image: /images/projects/chatapp.jpg
+        featured:
+          name: Check it out
+          link: https://dejans-superb-site-5ee7a9.webflow.io/
+        badges:
+          - "Webflow"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/converter
+
+      - title: Heritage Hunter - Travel Blog
+        content: I'm a big fan of traveling and Ancient History. So I've built a Personal travel blog in Wordpress where I'm writing about my travel adventures and what I've learned about different cultures.
+        image: /images/projects/heritagemockup.jpg
+        featured:
+          name: Check it out
+          link: https://heritagehunter.net/
+        badges:
+          - "Wordpress"
+          - "Elementor"
+        links:
+          - icon: fab fa-wordpress
+            # url: https://github.com/gurusabarish/HugoProfileV2
+
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: "Unlock Your Business Potential with Stunning Web Design – Get Your Free Consultation Now!"
+    btnName: Mail me
+    btnLink: dejan.dabic@outlook.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      linkedin: https://www.linkedin.com/in/dejan-dabic-10697a221/
+      twitter: https://twitter.com/_alt_human
+      instagram: https://www.instagram.com/dejandabic_/
+      facebook: https://www.facebook.com/dejan.dabic23/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
